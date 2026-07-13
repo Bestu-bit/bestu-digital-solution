@@ -109,23 +109,24 @@ footer {
     button {
         padding: 10px 20px;
     }
-.logo {
-    font-size: 20px;
+.logo-container {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Centers the logo block */
+    gap: 15px; 
+    padding: 20px;
+    background-color: #ffffff; /* Gives it a clean white background */
+}
+
+.main-logo {
+    height: 60px; /* This limits the height so it isn't huge! */
+    width: auto;  /* Keeps the image from stretching distortion */
+}
+
+.logo-text {
+    font-size: 24px; 
     font-weight: bold;
     color: #0066cc;
 }
-.logo {
-    width: 90px;
-    height: 60px;
-    object-fit: contain;
-}
-.logo-container {
-    text-align: center;
-    padding: 20px 0 10px;
-}
 
-.logo {
-    width: 80px;
-    height: auto;
-}
 }
