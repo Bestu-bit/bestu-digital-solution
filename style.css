@@ -5,6 +5,20 @@ body {
     color: #333;
 }
 
+.navbar {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    background: white;
+    padding: 20px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #0066cc;
+    font-weight: bold;
+}
+
 header {
     background: #0066cc;
     color: white;
@@ -53,7 +67,19 @@ footer {
     color: white;
     text-align: center;
     padding: 20px;
+}
+
+
 @media (max-width: 600px) {
+
+    .navbar {
+        gap: 15px;
+        padding: 15px;
+    }
+
+    .navbar a {
+        font-size: 14px;
+    }
 
     header {
         padding: 40px 15px;
@@ -83,5 +109,23 @@ footer {
     button {
         padding: 10px 20px;
     }
+.logo {
+    font-size: 20px;
+    font-weight: bold;
+    color: #0066cc;
+}
+.logo {
+    width: 90px;
+    height: 60px;
+    object-fit: contain;
+}
+.logo-container {
+    text-align: center;
+    padding: 20px 0 10px;
+}
+
+.logo {
+    width: 150px;
+    height: auto;
 }
 }
