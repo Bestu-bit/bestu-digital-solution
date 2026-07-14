@@ -9,6 +9,7 @@ html {
     scroll-behavior: smooth;
 }
 
+/* Logo */
 .logo-container {
     display: flex;
     flex-direction: column;
@@ -31,9 +32,11 @@ html {
     text-align: center;
 }
 
+/* Navigation */
 .navbar {
     display: flex;
     justify-content: center;
+    align-items: center;
     gap: 30px;
     background: white;
     padding: 15px;
@@ -54,6 +57,7 @@ html {
     color: #004999;
 }
 
+/* Header */
 header {
     background: linear-gradient(135deg, #0066cc, #0099ff);
     color: white;
@@ -68,8 +72,10 @@ header h1 {
 header p {
     font-size: 20px;
 }
+
+/* Button */
 button {
-    background: #ffffff;
+    background: white;
     color: #0066cc;
     border: none;
     padding: 15px 30px;
@@ -86,17 +92,21 @@ button:hover {
     transform: scale(1.05);
 }
 
+/* Sections */
 section {
     background: white;
     margin: 20px;
     padding: 30px;
     border-radius: 15px;
     text-align: center;
+    animation: fadeIn 1s ease-in;
 }
 
 h2 {
     color: #0066cc;
 }
+
+/* Project images */
 section div img {
     width: 100%;
     max-width: 500px;
@@ -104,12 +114,29 @@ section div img {
     object-fit: cover;
     border-radius: 10px;
     margin-bottom: 15px;
+    transition: 0.3s;
+}
+
+section div img:hover {
+    transform: scale(1.05);
+}
+
+/* Cards */
+section div {
+    margin: 20px;
+    padding: 20px;
+    border-radius: 15px;
+    background: white;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    transition: 0.3s;
 }
 
 section div:hover {
     transform: translateY(-5px);
-    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
 }
+
+/* Footer */
 footer {
     background: #222;
     color: white;
@@ -119,6 +146,50 @@ footer {
     box-sizing: border-box;
 }
 
+.footer-content {
+    text-align: center;
+}
+
+.footer-content h3 {
+    color: white;
+}
+
+.footer-content p {
+    margin: 10px 0;
+}
+
+/* WhatsApp button */
+.whatsapp {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #25D366;
+    color: white;
+    padding: 15px 20px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+.whatsapp:hover {
+    transform: scale(1.05);
+}
+
+/* Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Mobile */
 @media (max-width: 600px) {
 
     .navbar {
@@ -131,13 +202,8 @@ footer {
         font-size: 14px;
     }
 
-    .logo-container {
-        flex-direction: column;
-    }
-
     .logo-text {
         font-size: 24px;
-        text-align: center;
     }
 
     .main-logo {
@@ -172,61 +238,4 @@ footer {
     button {
         padding: 10px 20px;
     }
-section div img {
-    width: 100%;
-    max-width: 500px;
-    height: 250px;
-    object-fit: cover;
-    border-radius: 10px;
-    margin-bottom: 15px;
-}
-section div img {
-    transition: 0.3s;
-}
-
-section div img:hover {
-    transform: scale(1.05);
-}
-.whatsapp {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    background: #25D366;
-    color: white;
-    padding: 15px 20px;
-    border-radius: 30px;
-    text-decoration: none;
-    font-weight: bold;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
-}
-
-.whatsapp:hover {
-    transform: scale(1.05);
-}
-.footer-content {
-    text-align: center;
-}
-
-.footer-content h3 {
-    color: white;
-}
-
-.footer-content p {
-    margin: 10px 0;
-}
-section {
-    animation: fadeIn 1s ease-in;
-}
-
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-        transform: translateY(20px);
-    }
-
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
 }
