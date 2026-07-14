@@ -5,12 +5,36 @@ body {
     color: #333;
 }
 
+.logo-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px; 
+    padding: 20px;
+    background-color: #ffffff;
+    border: none !important;
+    margin: 0 !important;
+}
+
+.main-logo {
+    height: 60px;
+    width: auto;  
+}
+
+.logo-text {
+    font-size: 24px; 
+    font-weight: bold;
+    color: #0066cc;
+}
+
 .navbar {
     display: flex;
     justify-content: center;
     gap: 30px;
     background: white;
     padding: 20px;
+    border: none;
+    margin: 0;
 }
 
 .navbar a {
@@ -55,7 +79,7 @@ h2 {
     color: #0066cc;
 }
 
-div {
+section div {
     margin: 20px;
     padding: 15px;
     border: 1px solid #ddd;
@@ -69,9 +93,7 @@ footer {
     padding: 20px;
 }
 
-
 @media (max-width: 600px) {
-
     .navbar {
         gap: 15px;
         padding: 15px;
@@ -102,31 +124,11 @@ footer {
         font-size: 24px;
     }
 
-    div {
+    section div {
         margin: 10px 0;
     }
 
     button {
         padding: 10px 20px;
     }
-.logo-container {
-    display: flex;
-    align-items: center;
-    justify-content: center; /* Centers the logo block */
-    gap: 15px; 
-    padding: 20px;
-    background-color: #ffffff; /* Gives it a clean white background */
-}
-
-.main-logo {
-    height: 60px; /* This limits the height so it isn't huge! */
-    width: auto;  /* Keeps the image from stretching distortion */
-}
-
-.logo-text {
-    font-size: 24px; 
-    font-weight: bold;
-    color: #0066cc;
-}
-
 }
