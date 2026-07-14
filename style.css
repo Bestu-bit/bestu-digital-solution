@@ -110,12 +110,13 @@ section div:hover {
     transform: translateY(-5px);
     box-shadow: 0 5px 15px rgba(0,0,0,0.1);
 }
-
 footer {
     background: #222;
     color: white;
     text-align: center;
     padding: 20px;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 @media (max-width: 600px) {
