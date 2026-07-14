@@ -4,28 +4,31 @@ body {
     background: #f5f7fa;
     color: #333;
 }
-
 .logo-container {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 15px; 
-    padding: 20px;
+    gap: 20px; 
+    padding: 25px 20px;
     background-color: #ffffff;
     border: none !important;
     margin: 0 !important;
 }
 
 .main-logo {
-    height: 60px;
+    height: 100px; /* Made this much bigger! */
     width: auto;  
+    border-radius: 10px; /* Rounds the edges of the logo background */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); /* Adds a soft, attractive shadow */
 }
 
 .logo-text {
-    font-size: 24px; 
+    font-size: 32px; /* Made the text larger to match the bigger logo */
     font-weight: bold;
     color: #0066cc;
+    letter-spacing: 0.5px;
 }
+
 
 .navbar {
     display: flex;
